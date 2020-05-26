@@ -15,20 +15,27 @@ $tech_boost = "tech";
 $tech_boost .= "boost";
 echo $tech_boost;
 
+// 5.【応用】バグの修正
+//   変数　$2018_calendar→$calendar_2018に変更
+//   配列を囲む{}を[]にした
 $calendar_2018 = [
   "January" => "1月",
+// 2月"、→　2月",に修正
   "February" => "2月",
   "March" => "3月",
   "April" => "4月",
   "May" => "5月",
+//　= "6月",　→　  => "6月",　に修正
   "June" => "6月",
   "July" => "7月",
   "August" => "8月",
   "September" => "9月",
+// 10月, →　"10月",　に修正
   "October" => "10月",
   "November" => "11月",
   "December" => "12月"
 ];
 
-// 12月を表示する
+// 変数　$2018_calendar→$calendar_2018に修正
+// December→"December"に修正
 echo $calendar_2018["December"];
