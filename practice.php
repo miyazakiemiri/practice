@@ -16,7 +16,7 @@ $tech_boost .= "boost";
 echo $tech_boost;
 
 // 5.【応用】バグの修正
-//   変数　$2018_calendar→$calendar_2018に変更
+//   変数　$2018_calendar→$calendar_2018に修正
 //   配列を囲む{}を[]にした
 $calendar_2018 = [
   "January" => "1月",
