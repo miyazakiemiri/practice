@@ -2,21 +2,28 @@
 //課題1
 //引数に数値を指定して実行すると、数値を2倍にして返す関数を作成してください
 
-function sum($number) {
+function double($number){
     $a = $number *2;
     echo $a.PHP_EOL;
 }
 
-sum(2);
+double(2);
+
+//●質問です●　上と下の関数はどちらの方がいいのでしょうか？
+//153行の部分も確認してもらえますか？同じような質問です。
+function double_2($number){
+      return $number *2;
+}
+echo double_2(4).PHP_EOL;
 
 
 //課題2
 //$a と $b を仮引数に持ち、　$a と $b　を足した結果を返す関数を作成してください。
 
-function f($a, $b){
-    return $a + $b;
+function sum($a , $b){
+      return $a + $b;
 }
-echo f(1,1).PHP_EOL;
+echo sum(1,1).PHP_EOL;
 
 
 //課題3
@@ -26,7 +33,7 @@ echo f(1,1).PHP_EOL;
 function multiple_array($arr){
     $result= 1;
     foreach($arr as $a){
-    $result *= $a; 
+         $result *= $a; 
     }
     return $result;
 }
@@ -37,18 +44,17 @@ echo multiple_array(array(1,3,5,7,9)).PHP_EOL;
 //【応用】　次のプログラムは、配列の中で一番大きい値を返す max_array 
 //という関数を実装しようとしています。途中の部分を完成させてください。
 
-$arr = array(1,2,3);
 function max_array($arr){
     $result = 0;
     foreach($arr as $a){
-        if($result < $a){
-            $result =$a;
+       if($result < $a){
+          $result = $a;
         }
     }
     return $result;
 }
 
-echo max_array($arr).PHP_EOL;
+echo max_array([3,8,2,5,4]).PHP_EOL;
 
 //課題5
 //次のビルトイン関数の用途、使い方を調べて実際に使ってみてください。
@@ -142,5 +148,15 @@ function make_harf($x){
 make_harf(4);
 make_harf(6);
 make_harf(10);
+
+
+//●質問●　こちらの方がいいのですか？
+function make_harf2($x){
+   return $x / 2;
+}
+
+echo make_harf2(4).PHP_EOL;
+echo make_harf2(6).PHP_EOL;
+echo make_harf2(10).PHP_EOL;
 
 ?>
