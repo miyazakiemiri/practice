@@ -6,8 +6,8 @@
 //と表示するように実装してください。
 
 $name = "Miyazaki";
-if ($name = "Miyazaki") {
-    echo "「私はあなたの名前です」";
+if ($name == "Miyazaki") {
+    echo "「私はあなたの名前です」".PHP_EOL;
 } else {
     echo "「あなたの名前ではありません」".PHP_EOL;
 }

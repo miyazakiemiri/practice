@@ -1,122 +1,32 @@
 <?php
-$integer = 20;
-echo $integer;
-
-$string = "abc";
-echo $string;
-
-$new_integer = $integer + 10;
-echo $new_integer;
-
-$array = [2017,2018,2019,2020];
-echo $array[0];
-echo $array[2];
-
-$array2 = ["spring","summer","autumn","winter"];
-echo $array2[2];
-
-$animals = [
-    "cat" => "猫",
-    "dog" => "犬",
-    "bird" => "鳥",
-    ];
-echo $animals["cat"];
-echo $animals["bird"];
-
-$result = true;
-if ($result == true) {
-    echo "成功しました。";
+//
+$dinner = "ハンバーグ";
+if($dinner == "ハンバーグ"){
+    echo "楽しみ！ハンバーグ大好き";
 } else {
-    echo "失敗しました。";
+    echo "ウェー食べたく無いよ";
 }
 
-$value = 6;
-echo $value +2;
+//
+$name = "Alexa";
+if($name == "Alexa"){
+    echo "はい、私は".$name."です";
+} else {
+    echo "GoogleHome ではありません。";
+}
 
-$value = 6;
-echo $value -2;
 
-$value = 6;
-echo $value *2;
+//35000以上 "海外旅行へ行く";
+//10000以上35000未満 "国内旅行へ行く";
+//10000未満 "近所の喫茶店へ行く"
 
-$value = 6;
-echo $value /2;
+$money = 34000;
 
-$value = "AAA";
-echo $value . "BBB";
-
-$value = 10;
-$result = $value == 20;
-var_dump($result);
-
-$value = 10;
-$result = $value < 20;
-var_dump($result);
-
-$value = 10;
-$result = $value > 20;
-var_dump($result);
-
-$a = "20";
-$b = 20;
-
-$result = $a == $b;
-var_dump($result);
-
-$result = $a === $b;
-var_dump($result);
-
-$value = 10;
-++$value;
-echo $value;
-
-$value = 10;
---$value;
-echo $value;
-
-$value = 10;
-$value += 5;
-echo $value;
-
-$value = 10;
-$value -= 5;
-echo $value;
-
-$value = 'apple';
-$value .= 'orange';
-echo $value;
-
-$value = 10;
-$result = ($value < 20) ? '$valueは20より小さい':'$valueは20と等しいかまたは大きい';
-echo $result;
-
-$a = 3;
-$b = 7;
-echo $a+ $b;
-
-$hello = "Hello,";
-$name = "miyazaki";
-$world = "'s world!";
-echo $hello.$name.$world;
-
-$tech_boost = "tech";
-$tech_boost .= "boost";
-echo $tech_boost;
-
-$calendar_2018 = [
-  "January" => "1月",
-  "February" => "2月",
-  "March" => "3月",
-  "April" => "4月",
-  "May" => "5月",
-  "June" => "6月",
-  "July" => "7月",
-  "August" => "8月",
-  "September" => "9月",
-  "October" => "10月",
-  "November" => "11月",
-  "December" => "12月"
-];
-
-// 12月を表示する
-echo $calendar_2018["December"];
+if($money >= 3500){
+    echo "海外旅行へ行く";
+} elseif($money >= 10000) {
+    echo "国内旅行へ行く";
+} else {
+    echo "近所の喫茶店へ行く";
+}
+?>
