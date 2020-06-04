@@ -2,15 +2,12 @@
 //課題1
 //引数に数値を指定して実行すると、数値を2倍にして返す関数を作成してください
 
-function sum($max) {
-    $result = 0;
-    for($i=1; $i <= $max; $i++ ){
-        $result += $i;
-    }
-    return $result * 2;
+function sum($number) {
+    $a = $number *2;
+    echo $a.PHP_EOL;
 }
 
-echo sum(1).PHP_EOL;
+sum(2);
 
 
 //課題2
